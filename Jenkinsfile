@@ -16,7 +16,8 @@ pipeline {
 		}	
 		stage ('22Q1-cont') {
 			steps {
-				sh "docker-compose up -d --remove-orphans"
+				sh "docker-compose down --remove-orphans"
+				sh "docker-compose up -d"
 			}				
 		}	
 	}

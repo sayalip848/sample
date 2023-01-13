@@ -5,4 +5,4 @@ services:
       context: .
     image: myimage:1.0
     ports:
-      - '90:80'
+      - '80:80'

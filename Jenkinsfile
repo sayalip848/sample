@@ -11,10 +11,10 @@ pipeline {
 	stages {
 		stage ('git-checkout') {
 			steps {
-				git branch: '22Q2', url: 'https://github.com/sayalip848/sample.git'
+				git branch: '22Q1', url: 'https://github.com/sayalip848/sample.git'
 			}
 		}	
-		stage ('22Q2-cont') {
+		stage ('22Q1-cont') {
 			steps {
 				sh "docker-compose up -d"
 			}				

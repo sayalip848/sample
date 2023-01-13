@@ -2,7 +2,7 @@ pipeline {
 	agent {
 	label {
 		label 'built-in'
-		customWorkspace '/mnt/project1'
+		customWorkspace '/mnt/project2'
 		}
 	}
 	tools{
@@ -16,7 +16,7 @@ pipeline {
 		}	
 		stage ('22Q2-cont') {
 			steps {
-				sh "docker-compose down --remove-orphans"
+				sh "docker-compose down --rmi local"
 				sh "docker-compose up -d"
 			}				
 		}	

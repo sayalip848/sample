@@ -3,6 +3,6 @@ services:
   cont:
     build:
       context: .
-    image: myimage:1.0
+    image: myimage1
     ports:
       - '80:80'

@@ -16,7 +16,7 @@ pipeline {
 		}	
 		stage ('22Q2-cont') {
 			steps {
-				sh "docker-compose down --rmi local"
+				sh "docker-compose down --remove-orphanes"
 				sh "docker-compose up -d"
 			}				
 		}	

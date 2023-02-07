@@ -1,8 +1,10 @@
 version: '3'
 services:
-  cont1:
+
+  bui:
     build:
       context: .
-    image: myimage2
+    image: myimage1
+
     ports:
-      - '90:80'
+      - '81:80'

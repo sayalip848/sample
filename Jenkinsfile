@@ -2,7 +2,7 @@ pipeline {
 	agent {
 	label {
 		label 'built-in'
-		customWorkspace '/mnt/project1'
+		customWorkspace '/mnt/project2'
 		}
 	}
 	tools{
